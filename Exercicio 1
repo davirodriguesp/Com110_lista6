@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(void) {
+ 
+  int i, x, aux, v[8];
+   for (i = 0; i<8; i++){
+    
+     printf("Digite o valor da posição %i: ", i);
+     scanf("%i", &v[i]);
+   }
+   for (i = 0; i<8; i++){
+
+     for(x=i+1;x<8;x++){
+
+     if(v[i]>v[x]){
+
+      aux = v[i];
+      v[i]=v[x];
+      v[x]=aux;
+     }
+     }
+   }
+    printf("\n\n===================================================\n");
+    printf("\n    COLOCANDO EM ORDEM...");
+for (i = 0; i<8; i++){
+  printf("\n");
+  printf("\n O valor da posição %i agora é: %i", i, v[i]);
+}
+  return 0;
+}
