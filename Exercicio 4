@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void) {
+char c[10];
+for(int i = 0; i <=10; i++){
+
+  printf("   Digite UMA letra ou UM caractere: ");
+  scanf("%s", &c[i]);
+}
+ printf("\n=================================================");
+ printf("\n \t\t\tORGANIZANDO ...");
+ printf("\n\n");
+
+for(int i = 10; i >=0; i--){
+ 
+  printf("\n A sequência de trás para frente é: %c ", c[i]);
+}
+printf("");
+
+
+
+ return 0;
+}
